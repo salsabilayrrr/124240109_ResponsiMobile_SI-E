@@ -262,7 +262,7 @@ class _FavoritePageState extends State<FavoritePage> {
                     subtitle: Padding(
                       padding: const EdgeInsets.only(top: 6),
                       child: Text(
-                        '${item.author} • [${item.category.toUpperCase()}]',
+                        '${item.author} • ${item.publishedAt}',
                         style: TextStyle(
                           color: Colors.grey.shade600,
                           fontSize: 12,
@@ -271,10 +271,10 @@ class _FavoritePageState extends State<FavoritePage> {
                       ),
                     ),
 
-                    // 4. Ikon Sampah di sebelah kanan (Trailing) untuk menghapus
+                    // 4. Ikon favorite di sebelah kanan (Trailing) untuk menghapus
                     trailing: IconButton(
                       icon: const Icon(
-                        Icons.delete_outline,
+                        Icons.favorite,
                         color: Colors.red,
                       ),
                       tooltip: 'Hapus dari Favorit',

@@ -90,24 +90,24 @@ class _LoginPageState extends State<LoginPage> {
               // Ganti Icon(Icons.xxx) sesuai tema soal (misal Icons.movie, Icons.tv, Icons.fastfood).
               Container(
                 padding: const EdgeInsets.all(16),
-                decoration: BoxDecoration(
-                  color: const Color(0xFF5C5CFF).withOpacity(0.1),
-                  shape: BoxShape.circle,
-                ),
-                child: const Icon(
-                  Icons.rocket_launch_rounded, // Ganti Icon sesuai tema, misal Icons.movie, Icons.tv, dll
-                  size: 64,
-                  color: Color(0xFF5C5CFF),
-                ),
+                // decoration: BoxDecoration(
+                //   color: const Color(0xFF5C5CFF).withOpacity(0.1),
+                //   shape: BoxShape.circle,
+                // ),
+                // child: const Icon(
+                //   Icons.rocket_launch_rounded, // Ganti Icon sesuai tema, misal Icons.movie, Icons.tv, dll
+                //   size: 64,
+                //   color: Color(0xFF5C5CFF),
+                // ),
               ),
               const SizedBox(height: 16),
               // =====================================================================================
 
               // Judul Halaman
               const Text(
-                'Silakan Login',
+                'Selamat Datang di Resep Masakan',
                 style: TextStyle(
-                  fontSize: 22,
+                  fontSize: 18,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -164,20 +164,20 @@ class _LoginPageState extends State<LoginPage> {
               const SizedBox(height: 16),
 
               // Tombol Teks Pindah ke Halaman Register
-              TextButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const RegisterPage(),
-                    ),
-                  );
-                },
-                child: const Text(
-                  'Belum punya akun? Daftar di sini',
-                  style: TextStyle(color: Color(0xFF5C5CFF)),
-                ),
-              ),
+              // TextButton(
+              //   onPressed: () {
+              //     Navigator.push(
+              //       context,
+              //       MaterialPageRoute(
+              //         builder: (context) => const RegisterPage(),
+              //       ),
+              //     );
+              //   },
+              //   // child: const Text(
+              //   //   'Belum punya akun? Daftar di sini',
+              //   //   style: TextStyle(color: Color(0xFF5C5CFF)),
+              //   // ),
+              // ),
             ],
           ),
         ),

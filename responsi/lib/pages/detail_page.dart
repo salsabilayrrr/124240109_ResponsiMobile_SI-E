@@ -111,7 +111,7 @@ class _DetailPageState extends State<DetailPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Detail'),
+        title: const Text('Detail Resep'),
         actions: [
           // Tombol Ikon Hati di AppBar (Ketentuan Soal: Outline jika belum, Merah jika sudah)
           IconButton(
@@ -273,7 +273,7 @@ class _DetailPageState extends State<DetailPage> {
                 //   ),
                 //   const SizedBox(height: 16),
 
- Row(
+                  Row(
                     children: [
                       // const Icon(
                       //   Icons.devices,
@@ -388,9 +388,10 @@ class _DetailPageState extends State<DetailPage> {
 
                   // 5. Teks Summary / Ringkasan Berita
                   Text(
-                    widget.item.summary.isNotEmpty
-                        ? widget.item.summary
-                        : 'Tidak ada ringkasan yang tersedia untuk artikel ini.',
+                     'Bahan-bahan: ${widget.item.summary}',
+                    // widget.item.summary.isNotEmpty
+                    //     ? widget.item.summary
+                    //     : 'Tidak ada ringkasan yang tersedia untuk artikel ini.',
                     style: TextStyle(
                       fontSize: 14,
                       color: Colors.grey.shade800,
@@ -398,12 +399,15 @@ class _DetailPageState extends State<DetailPage> {
                     ),
                   ),
 
+Divider(color: Colors.grey.shade300),
+                  const SizedBox(height: 12),
+
                   // Ruang kosong tambahan di bagian bawah agar teks tidak tertutup FloatingActionButton
-                  const SizedBox(height: 80),
                    Text(
-                    widget.item.publisher.isNotEmpty
-                        ? widget.item.publisher
-                        : 'Tidak ada ringkasan yang tersedia untuk artikel ini.',
+                     'Langkah Memasak: ${widget.item.publisher}',
+                    // widget.item.publisher.isNotEmpty
+                    //     ? widget.item.publisher
+                    //     : 'Tidak ada ringkasan yang tersedia untuk artikel ini.',
                     style: TextStyle(
                       fontSize: 14,
                       color: Colors.grey.shade800,
